@@ -1,34 +1,23 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { ChakraProvider } from "@chakra-ui/react";
-import { Roboto } from 'next/font/google'
+import { Roboto } from "next/font/google";
+import AppBar from "@/components/AppBar";
+import theme from "@/theme";
 
 const roboto = Roboto({
-  weight: '400',
-  subsets: ['latin'],
-})
-
-// 1. Import the extendTheme function
-import { extendTheme } from '@chakra-ui/react'
-
-// 2. Extend the theme to include custom colors, fonts, etc
-const colors = {
-  brand: {
-    900: '#1a365d',
-    800: '#153e75',
-    700: '#2a69ac',
-  },
-}
-
-export const theme = extendTheme({ colors })
+  weight: "400",
+  subsets: ["latin"],
+});
 
 // 3. Pass the `theme` prop to the `ChakraProvider`
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-      <main className={roboto.className}>
-        <Component {...pageProps} />
-      </main>
+        <AppBar />
+        <main className={roboto.className}>
+          <Component {...pageProps} />
+        </main>
     </ChakraProvider>
   );
 }
