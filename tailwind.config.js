@@ -19,5 +19,6 @@ module.exports = {
       red: "#E63946",
     },
   },
+  darkMode: 'class',
   plugins: [],
 };
