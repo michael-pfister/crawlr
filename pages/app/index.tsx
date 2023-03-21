@@ -1,3 +1,7 @@
 export default function App() {
-    return "app"
+    return <>
+        <section>
+            Hero
+        </section>
+    </>
 }

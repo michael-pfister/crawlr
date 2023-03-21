@@ -18,6 +18,7 @@ const colors = {
 const config: ThemeConfig = {
   initialColorMode: "dark",
   useSystemColorMode: false,
+  disableTransitionOnChange: false,
 };
 
 const styles = {
