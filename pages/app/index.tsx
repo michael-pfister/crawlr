@@ -1,7 +1,7 @@
 export default function App() {
-    return <>
-        <section>
-            Hero
-        </section>
-    </>
+	return (
+		<>
+			<section>Hero</section>
+		</>
+	);
 }

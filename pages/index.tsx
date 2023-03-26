@@ -1,9 +1,7 @@
 export default function Home() {
-  return (
-    <>
-      <section>
-        Hero
-      </section>
-    </>
-  );
+	return (
+		<>
+			<section>Hero</section>
+		</>
+	);
 }
